@@ -2,6 +2,7 @@ package view;
 
 import controller.CadastroController;
 import java.sql.Connection;
+import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import model.dao.ModelConnect;
 
@@ -36,7 +37,6 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
         txvCliCPF = new javax.swing.JTextField();
         txvCliNome = new javax.swing.JTextField();
         txvCliEmail = new javax.swing.JTextField();
-        txvCliSexo = new javax.swing.JTextField();
         txvCliTelefone = new javax.swing.JTextField();
         txvCliCep = new javax.swing.JTextField();
         txvCliEndereco = new javax.swing.JTextField();
@@ -47,6 +47,7 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
         btnCadastrar = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        cboSexo = new javax.swing.JComboBox<>();
 
         setResizable(false);
 
@@ -112,6 +113,8 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
         jLabel13.setForeground(new java.awt.Color(153, 0, 153));
         jLabel13.setText("Informações básicas e de contato");
 
+        cboSexo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "M", "F" }));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -130,8 +133,8 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
                         .addComponent(txvCliCPF, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(30, 30, 30)
                         .addComponent(jLabel4)
-                        .addGap(11, 11, 11)
-                        .addComponent(txvCliSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(80, 80, 80)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -194,8 +197,9 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txvCliCPF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txvCliSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cboSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txvCliEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -284,6 +288,7 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCadastrar;
+    private javax.swing.JComboBox<String> cboSexo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -306,7 +311,6 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
     private javax.swing.JTextField txvCliEndereco;
     private javax.swing.JTextField txvCliNome;
     private javax.swing.JTextField txvCliSenha;
-    private javax.swing.JTextField txvCliSexo;
     private javax.swing.JTextField txvCliTelefone;
     private javax.swing.JTextField txvCliUsuario;
     // End of variables declaration//GEN-END:variables
@@ -375,15 +379,7 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
         this.txvCliSenha = txvCliSenha;
     }
 
-    public JTextField getTxvCliSexo() {
-        return txvCliSexo;
-    }
-
-    public void setTxvCliSexo(JTextField txvCliSexo) {
-        this.txvCliSexo = txvCliSexo;
-    }
-
-    public JTextField getTxvCliTelefone() {
+     public JTextField getTxvCliTelefone() {
         return txvCliTelefone;
     }
 
@@ -399,6 +395,15 @@ public class TelaCadastroUsuario extends javax.swing.JFrame {
         this.txvCliUsuario = txvCliUsuario;
     }
 
+    public JComboBox<String> getCboSexo() {
+        return cboSexo;
+    }
+
+    public void setCboSexo(JComboBox<String> cboSexo) {
+        this.cboSexo = cboSexo;
+    }
+
+    
 
 }
 

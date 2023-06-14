@@ -38,7 +38,6 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         txvFunCpf = new javax.swing.JTextField();
         jLabel5 = new javax.swing.JLabel();
-        txvFunSexo = new javax.swing.JTextField();
         txvFunEndereco = new javax.swing.JTextField();
         jLabel6 = new javax.swing.JLabel();
         txvFunEmail = new javax.swing.JTextField();
@@ -55,6 +54,7 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
         btnUpdate = new javax.swing.JButton();
         btnRemove = new javax.swing.JButton();
         cbProfissao = new javax.swing.JComboBox<>();
+        cboSexoF = new javax.swing.JComboBox<>();
         jPanel4 = new javax.swing.JPanel();
         lbGerenciarAgendamentos = new javax.swing.JLabel();
         lbGerenciarUsuarios = new javax.swing.JLabel();
@@ -138,6 +138,8 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
             }
         });
 
+        cboSexoF.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masculino", "Feminino" }));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -187,25 +189,26 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
                 .addComponent(txvFunCep, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(10, 10, 10)
-                .addComponent(jLabel5)
-                .addGap(193, 193, 193)
-                .addComponent(jLabel6)
-                .addGap(177, 177, 177)
-                .addComponent(jLabel9))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
-                .addComponent(txvFunSexo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(txvFunEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(16, 16, 16)
-                .addComponent(txvFunCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(10, 10, 10)
                 .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(20, 20, 20)
                 .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(16, 16, 16)
                 .addComponent(btnRemove, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(10, 10, 10)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(cboSexoF, javax.swing.GroupLayout.PREFERRED_SIZE, 202, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(txvFunEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, 214, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(16, 16, 16)
+                        .addComponent(txvFunCidade, javax.swing.GroupLayout.PREFERRED_SIZE, 246, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(193, 193, 193)
+                        .addComponent(jLabel6)
+                        .addGap(177, 177, 177)
+                        .addComponent(jLabel9))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -245,12 +248,13 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
                     .addComponent(jLabel5)
                     .addComponent(jLabel6)
                     .addComponent(jLabel9))
-                .addGap(4, 4, 4)
+                .addGap(3, 3, 3)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txvFunSexo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txvFunEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txvFunEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(cboSexoF, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(txvFunCidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(16, 16, 16)
+                .addGap(15, 15, 15)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCreate, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -415,6 +419,7 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
     private javax.swing.JButton btnRemove;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JComboBox<String> cbProfissao;
+    private javax.swing.JComboBox<String> cboSexoF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -442,7 +447,6 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
     private javax.swing.JTextField txvFunEmail;
     private javax.swing.JTextField txvFunEndereco;
     private javax.swing.JTextField txvFunNome;
-    private javax.swing.JTextField txvFunSexo;
     private javax.swing.JTextField txvFunTelefone;
     private javax.swing.JTextField txvPesquisar;
     // End of variables declaration//GEN-END:variables
@@ -488,9 +492,16 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
     public void setUser_authenticated(Usuario user_authenticated) {
         this.user_authenticated = user_authenticated;
     }
-    
-    
 
+    public JComboBox<String> getCboSexoF() {
+        return cboSexoF;
+    }
+
+    public void setCboSexoF(JComboBox<String> cboSexoF) {
+        this.cboSexoF = cboSexoF;
+    }
+    
+    
     public void setTxvFunCep(JTextField txvFunCep) {
         this.txvFunCep = txvFunCep;
     }
@@ -533,14 +544,6 @@ public class TelaGerenciarFuncionarios extends javax.swing.JFrame {
 
     public void setTxvFunNome(JTextField txvFunNome) {
         this.txvFunNome = txvFunNome;
-    }
-
-    public JTextField getTxvFunSexo() {
-        return txvFunSexo;
-    }
-
-    public void setTxvFunSexo(JTextField txvFunSexo) {
-        this.txvFunSexo = txvFunSexo;
     }
 
     public JTextField getTxvFunTelefone() {

@@ -16,7 +16,7 @@ public class CadastroHelper {
     public Usuario getUser(){
         String nome     = view.getTxvCliNome().getText();
         String cpf      = view.getTxvCliCPF().getText();
-        Character sexo  = view.getTxvCliSexo().getText().charAt(0);
+        Character sexo  = view.getCboSexo().getSelectedItem().toString().charAt(0);
         String telefone = view.getTxvCliTelefone().getText();
         String email    = view.getTxvCliEmail().getText();
         String endereco = view.getTxvCliEndereco().getText();
@@ -35,7 +35,6 @@ public class CadastroHelper {
     public void clearScreen(){
         view.getTxvCliNome().setText("");
         view.getTxvCliCPF().setText("");
-        view.getTxvCliSexo().setText("");
         view.getTxvCliTelefone().setText("");
         view.getTxvCliEmail().setText("");
         view.getTxvCliEndereco().setText("");

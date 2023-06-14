@@ -31,7 +31,6 @@ public class UsuarioDAO {
             smt.setString(8, u.getCep());
             smt.setString(9, u.getCidade());
             smt.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Cadastrado com sucesso.");
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(null, "Erro ao cadastrar.");
             System.out.println(ex);

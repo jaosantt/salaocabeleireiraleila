@@ -18,7 +18,7 @@ public class FuncionarioHelper {
     public Funcionario getFuncionario() {
         String nome = view.getTxvFunNome().getText();
         String cpf = view.getTxvFunCpf().getText();
-        Character sexo = view.getTxvFunSexo().getText().charAt(0);
+        Character sexo = view.getCboSexoF().getSelectedItem().toString().charAt(0);
         String telefone = view.getTxvFunTelefone().getText();
         String email = view.getTxvFunEmail().getText();
         String endereco = view.getTxvFunEndereco().getText();
@@ -33,7 +33,6 @@ public class FuncionarioHelper {
     public void clearScreen() {
         view.getTxvFunNome().setText("");
         view.getTxvFunCpf().setText("");
-        view.getTxvFunSexo().setText("");
         view.getTxvFunTelefone().setText("");
         view.getTxvFunEmail().setText("");
         view.getTxvFunEndereco().setText("");
@@ -93,7 +92,11 @@ public class FuncionarioHelper {
     public void setCampos(Funcionario f){
         view.setId(f.getId());
         view.getTxvFunNome().setText(f.getNome());
-        view.getTxvFunSexo().setText(Character.toString(f.getSexo()));
+        if(f.getSexo() == 'M'){
+            view.getCboSexoF().setSelectedIndex(0);
+        }else{
+            view.getCboSexoF().setSelectedIndex(1);
+        }
         view.getTxvFunTelefone().setText(f.getTelefone());
         view.getTxvFunEndereco().setText(f.getEndereco());
         view.getTxvFunBairro().setText(f.getBairro());
@@ -110,7 +113,7 @@ public class FuncionarioHelper {
         Funcionario f = new Funcionario();
         f.setId(view.getId());
         f.setNome(view.getTxvFunNome().getText());
-        f.setSexo(view.getTxvFunSexo().getText().charAt(0));
+        f.setSexo(view.getCboSexoF().getSelectedItem().toString().charAt(0));
         f.setTelefone(view.getTxvFunTelefone().getText());
         f.setEndereco(view.getTxvFunEndereco().getText());
         f.setBairro(view.getTxvFunBairro().getText());
