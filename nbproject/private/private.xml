@@ -3,14 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/view/TelaLogin.java</file>
-            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/view/TelaPrincipal.java</file>
             <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/helper/HomeHelper.java</file>
-            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/HomeController.java</file>
-            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/helper/LoginHelper.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/helper/FuncionarioHelper.java</file>
             <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/view/TelaGerenciarFuncionarios.java</file>
             <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/FuncionarioController.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/helper/CadastroHelper.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/view/TelaCadastroUsuario.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/helper/UsuarioHelper.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/view/TelaLogin.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/view/TelaPrincipal.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/HomeController.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/helper/LoginHelper.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/model/dao/UsuarioDAO.java</file>
             <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/LoginController.java</file>
+            <file>file:/C:/Users/dasod/Documents/NetBeansProjects/TesteDSIN/src/controller/CadastroController.java</file>
         </group>
     </open-files>
 </project-private>
