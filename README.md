@@ -8,3 +8,8 @@ Para execução do projeto é necessário baixar o
 O arquivo dbsalon.sql no diretório raiz trata-se do dump do banco de dados.
 
 O print das telas está anexado ao e-mail.
+
+Login e senha para testar o modo admin:
+
+Login: admin
+Senha admin
